@@ -130,13 +130,14 @@ main > h1{
 
 
 select {
-    width: 180px;
+    width: 160px;
     padding: 5px 20px;
     border: none;
     color: white;
     border-bottom: 2px solid white;
     background-color: transparent; 
     margin-bottom: 10px;
+    margin-left: 40px;
 }
 
 

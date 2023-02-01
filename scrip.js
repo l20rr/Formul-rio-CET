@@ -109,7 +109,7 @@ campos[5].addEventListener("input",     function passwordVerif(){
    btn1.addEventListener("click",  function Enviar(){
         let erro = document.getElementById("error")
         let valid = document.getElementById("sucess")
-        if((campos[0].value === '' || campos[0].value.length < 5) || campos[1].value === '' || (campos[2].value === '' ||campos[2].value.length < 9 )  || (campos[4].value === '' || campos[4].value.length < 8 ) || (campos[5].value != campos[4].value || campos[5].value === '') || !(checkbox.checked) ){
+        if((campos[0].value === '' ||!(regexName.test(campos[0].value)) ) || (campos[1].value === ''|| !(regex.test(campos[1].value))) || (campos[2].value === '' ||campos[2].value.length < 9 )  || (campos[4].value === '' || campos[4].value.length < 8 ) || (campos[5].value != campos[4].value || campos[5].value === '') || !(checkbox.checked) ){
             erro.style.display = 'flex'
            
         }else{
