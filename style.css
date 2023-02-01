@@ -238,6 +238,10 @@ input:valid + span.validacao::after {
     margin-top: 10px;
    }
 
+   select{
+    width: 400px;
+   }
+
 }
 
 
@@ -266,6 +270,9 @@ input:valid + span.validacao::after {
       #form> .inputs > input{
         width: 250px;
         margin-top: 10px;
+       }
+       select{
+        width: 250px;
        }
 
        .esq{

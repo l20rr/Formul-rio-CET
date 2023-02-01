@@ -68,15 +68,7 @@ campos[5].addEventListener("input",     function passwordVerif(){
         setValid(5)
     }
 })
-/*
-    function dispalyNone(){
-        let span1 = document.getElementById("x1")
-        let span2 = document.getElementById("x2")
-        let span3 = document.getElementById("x3")
-        let span4 = document.getElementById("x4")
-        let span5 = document.getElementById("x5")
-    }
-*/
+
    btn2.addEventListener("click",  function Limpar() {
     let span1 = document.getElementById("x1")
     let span2 = document.getElementById("x2")
@@ -109,7 +101,7 @@ campos[5].addEventListener("input",     function passwordVerif(){
    btn1.addEventListener("click",  function Enviar(){
         let erro = document.getElementById("error")
         let valid = document.getElementById("sucess")
-        if((campos[0].value === '' ||!(regexName.test(campos[0].value)) ) || (campos[1].value === ''|| !(regex.test(campos[1].value))) || (campos[2].value === '' ||campos[2].value.length < 9 )  || (campos[4].value === '' || campos[4].value.length < 8 ) || (campos[5].value != campos[4].value || campos[5].value === '') || !(checkbox.checked) ){
+        if((campos[0].value === '' ||!(regexName.test(campos[0].value)) ) || (campos[1].value === ''|| !(regex.test(campos[1].value))) || (campos[2].value === '' ||campos[2].value.length < 9 )  || (campos[4].value === '' || campos[4].value.length < 8 ) || (campos[5].value != campos[4].value || campos[5].value == '') || !(checkbox.checked) ){
             erro.style.display = 'flex'
            
         }else{
