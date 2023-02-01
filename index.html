@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" media="screen">
+    <script src="./scrip.js" defer></script>
+  <script src="https://kit.fontawesome.com/c0b83493dd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+<body>
+    
+    <section id="section">
+        <main class="esq">
+            <i class="fa fa-table-tennis-paddle-ball"></i>
+            <h1>TORNEIO DA PRIMAVERA</h1>
+            <div class="inputs">Prémios até 10º lugar</div>
+            <div class="btn">
+              <a href="./Regulamento.html"> <button id="bot1">Regulamento</button></a>
+              <a href="#"><button id="bot2">Membros</button></a> 
+            </div>
+        </main>
+        <div id="form">
+          
+                <h1>INSCREVA-SE AQUI</h1>
+
+              <div id="error">
+                <h3>
+                    Não foi possivel fazer a inscrição verifique os dados
+                </h3>
+              </div>
+
+              <div id="sucess">
+                <h3>
+                    Dados Salvos
+                </h3>
+              </div>
+           
+                <div class="inputs">
+                   <div class="lable">
+                    <label for="fullname">Nome completo<span aria-label="required">*</span></label>
+                   </div>
+                    <input  class="fullname required" name="fullname" type="text" value=""  placeholder="nome" required > <span class="validacao" id="x1">X</span>
+                    
+                </div>
+                <div class="inputs">
+                    <div class="lable">
+                        <label for="email">Email<span aria-label="required">*</span></label>
+                    </div>
+                    <input  class="email required" name="email" type="text" value="" placeholder="Email" required>
+                    <span class="validacao" id="x2">X</span>
+                </div>
+                <div class="inputs">
+                   <div class="lable">
+                    <label for="tel">Telefone</label>
+                   </div>
+                    <input  class="tel required" name="tel" type="number" value="" size="20" minlength="9" maxlength="14" placeholder="Tel">
+                    <span class="validacao" id="x6">X</span>
+                </div>
+                <div class="inputs">
+                   <div class="lable">
+                    <label  for="data_nasc" id="dt">Data de nascimento</label>
+                   </div>
+                    <input  class="data_nasc required" name="data_nasc" type="date" value="">
+                    <span class="validacao" id="x3">X</span>
+                </div>
+                <div class="inputs">
+                   <div class="lable">
+                    <label  for="password">Senha<span aria-label="required">*</span></label>
+                   </div>
+                    <input  class="password required" name="password" type="password" value="" placeholder="Senha" required>
+                    <span class="validacao" id="x4">X</span>
+                </div>
+                <div class="inputs">
+                   <div class="lable">
+                    <label for="password_verif">Senha de novo<span aria-label="required">*</span></label>
+                   </div>
+                    <input  class="password_verif required" name="password_verif" type="password" value=""  placeholder="Senha"  required>
+                    <span class="validacao" id="x5">X</span>
+                </div>
+                <div class="inputs">
+                  <div class="lable">
+                    <label for="nivel_jog">Nível</label>
+                  </div>
+                    <select class="required" name="nivel_jog" id="nivel_jog">
+                        <option value="">Iniciado</option>
+                        <option value="">Intermédio</option>
+                        <option value="">Avançado</option>
+                        <option value="">Pré-Profissional</option>
+                        <option value="">Profissional</option>
+                    </select>
+                   
+                </div>
+                
+            <div class="inputs">
+                <div>
+                    <input type="checkbox" id="checkbox_privacidade" name="checkbox_privacidade" value="yes" > 
+                <label for="checkbox_privacidade">Li e concordo com a <a href="#">Politica de Privacidade</a></label>
+                &nbsp;
+                </div>
+            </div>
+            
+            <button id="btn1" >Submit </button>
+          
+            <button id="btn2">Limpar </button>
+
+            
+        </div>
+    </section>
+</body>
+</html>
+
+
